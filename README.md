@@ -17,9 +17,8 @@ The bitcoin merkle tree differs from a standard merkle tree implementation in tw
 
 
 #### How to run
-- Download block transactions from any bitcoin api ([ex](https://api.blockcypher.com/v1/btc/main/blocks/000000000000000018a9a6c39806292529a401918ec55e078306b35884814b7c?txstart=0&limit=400))
-- Create a new json file with the list of transactions (Eg : 319957.json)
-- Provide the new filename as input to `get_txn_list` function
-- Verify result with `Merkle Root` in block header ([ex](https://www.blockchain.com/btc/block/000000000000000018a9a6c39806292529a401918ec55e078306b35884814b7c))
 
-The repo example contains the transaction list for block 319957
+##### Python Example
+1. Ensure you have python3 installed
+2. Open `merkle.py` and change `SELECTED_BLOCK_HASH` to the block hash you want to test
+3. Run `python3 merkle.py` and compare merkle root with block explorer
